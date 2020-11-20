@@ -1,6 +1,6 @@
 # algo build
 
-Bash script to automate most of the algo Ubuntu deployment instructions documented by [Trail of Bits](https://github.com/trailofbits/algo).
+Bash script to automate most of the `algo` Ubuntu deployment instructions documented by [Trail of Bits](https://github.com/trailofbits/algo).  This is for the deployment option to run `algo` on your own Ubuntu server (option 12).
 
 ## Usage
 
