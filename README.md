@@ -5,5 +5,12 @@ Bash script to automate most of the algo Ubuntu deployment instructions document
 ## Usage
 
 ```bash
+# copy the build script to your algo server
+scp -i .ssh/algo.pem algo_build.sh root@<server_ip>:/root
+
+# connect to the algo server
+ssh -i .ssh/algo.pem root@<server_ip>
+
+# run the build script
 ./algo_build.sh
 ```
