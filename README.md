@@ -13,4 +13,7 @@ ssh -i .ssh/algo.pem root@<server_ip>
 
 # run the build script
 ./algo_build.sh
+
+# copy the config files locally
+scp -i .ssh/algo.pem -r root@<server_ip>:/root/algo/configs/<server_ip> ./
 ```
