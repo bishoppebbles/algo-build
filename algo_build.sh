@@ -17,9 +17,20 @@ python3 -m virtualenv --python="$(command -v python3)" .env &&
    python3 -m pip install -r requirements.txt
 
 # modify a computer algo config parameters
+# change the default 'desktop' user to 'hash'
 sed -i '/users/!b;n;n;n;s/desktop/hash/' config.cfg
+
+# change the default wireguard port to 443
+sed -i '/wireguard_port/s/51820/443/' config.cfg
+
+# disable dns encryption
 sed -i '/dns_encryption/s/true/false/' config.cfg
+
+# enable unattended reboot to ensure any software patches are installed
 sed -i '/unattended_reboot/!b;n;s/false/true/' config.cfg
+
+# change the reboot time to 0600 China Standard Time
+sed -i '/unattended_reboot/!b;n;n;s/06:00/22:00/' config.cfg
 
 # launch the algo deployment script
 ./algo
