@@ -12,6 +12,7 @@ scp -i .ssh/algo.pem algo_build.sh root@<server_ip>:/root
 ssh -i .ssh/algo.pem root@<server_ip>
 
 # run the build script
+chmod 744 algo_build.sh
 ./algo_build.sh
 
 # copy the config files locally
