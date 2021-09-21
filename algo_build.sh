@@ -21,7 +21,7 @@ python3 -m virtualenv --python="$(command -v python3)" .env &&
 sed -i '/users/!b;n;n;n;s/desktop/hash/' config.cfg
 
 # change the default wireguard port to 443
-sed -i '/wireguard_port/s/51820/443/' config.cfg
+#sed -i '/wireguard_port/s/51820/443/' config.cfg
 
 # disable dns encryption
 sed -i '/dns_encryption/s/true/false/' config.cfg
@@ -30,7 +30,7 @@ sed -i '/dns_encryption/s/true/false/' config.cfg
 sed -i '/unattended_reboot/!b;n;s/false/true/' config.cfg
 
 # change the reboot time to 0600 China Standard Time
-sed -i '/unattended_reboot/!b;n;n;s/06:00/22:00/' config.cfg
+#sed -i '/unattended_reboot/!b;n;n;s/06:00/22:00/' config.cfg
 
 # launch the algo deployment script
 ./algo
