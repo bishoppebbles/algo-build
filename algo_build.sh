@@ -32,5 +32,5 @@ sed -i '/unattended_reboot/!b;n;s/false/true/' config.cfg
 # change the reboot time to 0600 China Standard Time
 #sed -i '/unattended_reboot/!b;n;n;s/06:00/22:00/' config.cfg
 
-# launch the algo deployment script
-./algo
+# launch the algo deployment script (must run elevated)
+sudo ./algo
