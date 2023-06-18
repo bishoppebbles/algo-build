@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # update Ubuntu
-sudo apt-get update && sudo apt-get dist-upgrade -y
+sudo apt update && sudo apt dist-upgrade -y
 
 # pull the latest algo repository
 git clone https://github.com/trailofbits/algo.git
