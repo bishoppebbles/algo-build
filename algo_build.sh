@@ -7,7 +7,7 @@ sudo apt update && sudo apt dist-upgrade -y
 git clone https://github.com/trailofbits/algo.git
 
 # ensure python3 is installed and updated
-sudo apt install -y --no-install-recommends python3-virtualenv
+sudo apt install -y --no-install-recommends python3-virtualenv file lookup
 
 # install algo's remaining dependencies
 cd algo
